@@ -13,7 +13,7 @@ type Store[K comparable, V Storer[K]] struct {
 	m   map[K]V
 }
 
-func NewStore[K comparable, V Storer[K]]() *Store[K, V] {
+func New[K comparable, V Storer[K]]() *Store[K, V] {
 	return &Store[K, V]{
 		m: make(map[K]V),
 	}

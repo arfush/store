@@ -21,7 +21,7 @@ func (u testUser) StoreKey() uint64 {
 }
 
 func TestStore(t *testing.T) {
-	s := NewStore[uint64, testUser]()
+	s := New[uint64, testUser]()
 
 	t.Run("store", func(t *testing.T) {
 		s.Store(newTestUser(0, "Alex"))
