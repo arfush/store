@@ -1,3 +1,3 @@
-module github.com/arfus/store
+module github.com/arfush/store
 
 go 1.21
